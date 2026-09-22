@@ -1,0 +1,1247 @@
+/* =========================================================
+   TECH EXPERIENCE 2027
+   CSS ÚNICO PARA TODAS AS PÁGINAS
+   Nenhum HTML precisa ser alterado
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONFIGURAÇÕES GERAIS
+========================================================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f9;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   CABEÇALHO DAS PÁGINAS
+========================================================= */
+
+header {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   MENU DE NAVEGAÇÃO
+========================================================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    background-color: white;
+    padding: 15px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+nav a {
+    color: #334155;
+    text-decoration: none;
+
+    padding: 10px 15px;
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #0d9488;
+    color: white;
+}
+
+nav a.active {
+    background-color: #0d9488;
+    color: white;
+}
+
+
+/* =========================================================
+   CONTEÚDO PRINCIPAL
+========================================================= */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+
+/* =========================================================
+   SEÇÕES
+========================================================= */
+
+main > section {
+    background-color: white;
+
+    padding: 30px;
+    margin-bottom: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+main > section h2 {
+    color: #0f766e;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   PÁGINA INICIAL
+========================================================= */
+
+main > section figure {
+    margin: 20px 0;
+}
+
+main > section figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   CARDS DA PÁGINA INICIAL
+========================================================= */
+
+.cards-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    list-style: none;
+}
+
+.cards-grid li {
+    background-color: #f0fdfa;
+
+    border: 1px solid #ccfbf1;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    transition: 0.3s;
+}
+
+.cards-grid li:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   LISTA DE ETAPAS
+========================================================= */
+
+.step-list {
+    padding-left: 25px;
+}
+
+.step-list li {
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   ASIDE
+========================================================= */
+
+aside {
+    background-color: #f0fdfa;
+
+    border-left: 4px solid #0d9488;
+
+    padding: 20px;
+
+    margin-top: 25px;
+
+    border-radius: 6px;
+}
+
+
+/* =========================================================
+   BOTÕES / LINKS
+========================================================= */
+
+.btn-link {
+    display: inline-block;
+
+    background-color: #0d9488;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 20px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-link:hover {
+    background-color: #0f766e;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   PROGRAMAÇÃO - TABELAS
+========================================================= */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+}
+
+caption {
+    caption-side: top;
+
+    text-align: left;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    color: #64748b;
+
+    margin-bottom: 10px;
+}
+
+th {
+    background-color: #0f766e;
+
+    color: white;
+
+    padding: 15px;
+
+    text-align: left;
+}
+
+td {
+    padding: 14px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+tbody tr:hover {
+    background-color: #f0fdfa;
+}
+
+tfoot td {
+    background-color: #f0fdfa;
+
+    color: #475569;
+
+    font-size: 14px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   METER
+========================================================= */
+
+meter {
+    width: 150px;
+    height: 15px;
+
+    margin-right: 10px;
+}
+
+td span {
+    font-size: 14px;
+    color: #475569;
+}
+
+
+/* =========================================================
+   VAGAS DISPONÍVEIS
+========================================================= */
+
+.metrics-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    list-style: none;
+}
+
+.metric-item {
+    background-color: #f0fdfa;
+
+    border: 1px solid #ccfbf1;
+
+    border-radius: 10px;
+
+    padding: 20px;
+}
+
+.metric-item label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+
+    color: #334155;
+}
+
+.progress-wrap {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+progress {
+    width: 100%;
+    height: 15px;
+}
+
+.progress-wrap span {
+    white-space: nowrap;
+
+    font-size: 14px;
+
+    color: #475569;
+}
+
+
+/* =========================================================
+   LEGENDA
+========================================================= */
+
+.legend-list {
+    display: grid;
+
+    grid-template-columns: 150px 1fr;
+
+    gap: 15px 20px;
+}
+
+.legend-list dt {
+    font-weight: bold;
+
+    color: #0f766e;
+}
+
+.legend-list dd {
+    color: #475569;
+}
+
+
+/* =========================================================
+   PALESTRANTES
+========================================================= */
+
+details {
+    margin-top: 15px;
+
+    border: 1px solid #dbe4e8;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    background-color: #f8fafc;
+}
+
+summary {
+    padding: 18px 20px;
+
+    background-color: #f0fdfa;
+
+    color: #0f766e;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+summary:hover {
+    background-color: #ccfbf1;
+}
+
+
+/* =========================================================
+   PERFIL DOS PALESTRANTES
+========================================================= */
+
+.speaker-profile {
+    background-color: white;
+
+    padding: 25px;
+
+    margin: 0;
+
+    border-radius: 0;
+
+    box-shadow: none;
+}
+
+.speaker-profile h3 {
+    color: #334155;
+
+    font-size: 20px;
+
+    margin-bottom: 20px;
+}
+
+.speaker-profile p {
+    margin-bottom: 15px;
+}
+
+.speaker-profile figure {
+    text-align: center;
+
+    margin: 20px 0;
+}
+
+.speaker-profile img {
+    width: 100%;
+
+    max-width: 450px;
+
+    height: auto;
+
+    border-radius: 10px;
+}
+
+.highlight-text {
+    background-color: #f0fdfa;
+
+    color: #0f766e;
+
+    padding: 15px;
+
+    border-left: 4px solid #0d9488;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+main > section:last-child details {
+    background-color: white;
+
+    border: 1px solid #dbe4e8;
+}
+
+main > section:last-child summary {
+    background-color: white;
+
+    color: #334155;
+}
+
+main > section:last-child summary:hover {
+    background-color: #f0fdfa;
+}
+
+main > section:last-child details p {
+    padding: 0 20px 20px 20px;
+
+    color: #475569;
+}
+
+
+/* =========================================================
+   PÁGINA LOCAL
+========================================================= */
+
+address {
+    background-color: #f0fdfa;
+
+    border-left: 4px solid #0d9488;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+    border-radius: 6px;
+
+    font-style: normal;
+
+    color: #334155;
+}
+
+address strong {
+    color: #0f766e;
+
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   MAPA
+========================================================= */
+
+.map-container {
+    width: 100%;
+
+    margin: 20px 0;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+
+.map-container iframe {
+    width: 100%;
+
+    height: 450px;
+
+    border: 0;
+
+    display: block;
+}
+
+
+/* =========================================================
+   TRANSPORTE
+========================================================= */
+
+.transport-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    list-style: none;
+}
+
+.transport-card {
+    background-color: #f0fdfa;
+
+    border: 1px solid #ccfbf1;
+
+    border-radius: 10px;
+
+    padding: 25px;
+
+    transition: 0.3s;
+}
+
+.transport-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.transport-card h3 {
+    color: #0f766e;
+
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+.transport-card p {
+    color: #475569;
+}
+
+
+/* =========================================================
+   GALERIA
+========================================================= */
+
+.gallery-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    list-style: none;
+}
+
+.gallery-item {
+    background-color: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+.gallery-item figure {
+    margin: 0;
+}
+
+.gallery-item a {
+    display: block;
+
+    overflow: hidden;
+}
+
+.gallery-item img {
+    display: block;
+
+    width: 100%;
+
+    height: 240px;
+
+    object-fit: cover;
+
+    transition: 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item figcaption {
+    padding: 18px;
+
+    color: #334155;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    background-color: white;
+}
+
+
+/* =========================================================
+   CRÉDITOS DA GALERIA
+========================================================= */
+
+footer button {
+    background-color: #0d9488;
+
+    color: white;
+
+    border: none;
+
+    padding: 8px 15px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    margin-left: 5px;
+
+    transition: 0.3s;
+}
+
+footer button:hover {
+    background-color: #0f766e;
+}
+
+dialog {
+    width: 90%;
+
+    max-width: 700px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    margin: auto;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+    background-color: white;
+}
+
+dialog::backdrop {
+    background-color: rgba(15, 23, 42, 0.75);
+}
+
+dialog h2 {
+    color: #0f766e;
+
+    margin-bottom: 25px;
+}
+
+dialog section {
+    padding: 20px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 8px;
+
+    box-shadow: none;
+
+    background-color: #f8fafc;
+}
+
+dialog section h3 {
+    color: #334155;
+
+    margin-bottom: 10px;
+}
+
+dialog section p {
+    color: #475569;
+
+    margin-bottom: 6px;
+}
+
+dialog section a {
+    color: #0f766e;
+
+    text-decoration: none;
+}
+
+dialog section a:hover {
+    text-decoration: underline;
+}
+
+.btn-close {
+    background-color: #0d9488;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-close:hover {
+    background-color: #0f766e;
+}
+
+
+/* =========================================================
+   RODAPÉ
+========================================================= */
+
+footer {
+    background-color: #0f172a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    margin-top: 50px;
+}
+
+footer a {
+    color: #5eead4;
+
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================================
+   INSCRIÇÃO
+========================================================= */
+
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.form-container fieldset {
+    border: 1px solid #dbe4e8;
+    border-radius: 10px;
+    padding: 22px;
+    margin-bottom: 20px;
+}
+
+.form-container legend {
+    color: #0f766e;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 8px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #334155;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 11px 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    background: #f8fafc;
+    font-family: Arial, sans-serif;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #0d9488;
+    background: white;
+}
+
+.form-group small {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+}
+
+.radio-group label,
+.checkbox-grid label,
+.checkbox-single label {
+    font-weight: normal;
+}
+
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.checkbox-grid li {
+    background: #f0fdfa;
+    border: 1px solid #ccfbf1;
+    padding: 11px;
+    border-radius: 7px;
+}
+
+.checkbox-single {
+    background: #f0fdfa;
+    padding: 12px;
+    border-radius: 7px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.form-actions button {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-actions .btn-primary {
+    background: #0d9488;
+    color: white;
+}
+
+.form-actions .btn-primary:hover {
+    background: #0f766e;
+}
+
+.form-actions .btn-reset {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.form-actions .btn-reset:hover {
+    background: #cbd5e1;
+}
+
+.info-modal-trigger {
+    text-align: center;
+}
+
+.info-modal-trigger .btn-secondary {
+    border: none;
+    background: #0d9488;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.info-modal-trigger .btn-secondary:hover {
+    background: #0f766e;
+}
+
+/* RESPONSIVO DA INSCRIÇÃO */
+
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-row,
+    .checkbox-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions button {
+        width: 100%;
+    }
+}
+
+/* =========================================================
+   PÁGINA DE CONFIRMAÇÃO
+   Usa as classes que já existem no HTML
+========================================================= */
+
+body.page-confirmation {
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px 20px;
+
+    background-color: #f4f7f9;
+}
+
+.confirmation-card {
+    width: 100%;
+
+    max-width: 650px;
+
+    background-color: white;
+
+    padding: 45px;
+
+    border-radius: 16px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+}
+
+.status-icon {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 70px;
+
+    height: 70px;
+
+    margin: 0 auto 25px;
+
+    background-color: #0d9488;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 38px;
+
+    font-weight: bold;
+}
+
+.confirmation-card h1 {
+    color: #0f766e;
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+}
+
+.confirmation-card p {
+    color: #475569;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+}
+
+.confirmation-card strong {
+    color: #334155;
+}
+
+
+/* =========================================================
+   BOTÕES DA CONFIRMAÇÃO
+========================================================= */
+
+.confirmation-actions {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.confirmation-actions a {
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-secondary {
+    background-color: #e2e8f0;
+
+    color: #334155;
+}
+
+.btn-secondary:hover {
+    background-color: #cbd5e1;
+}
+
+.btn-primary {
+    background-color: #0d9488;
+
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0f766e;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+
+    /* MENU CONTINUA HORIZONTAL */
+
+    nav {
+        gap: 5px;
+
+        overflow-x: auto;
+
+        justify-content: flex-start;
+    }
+
+    nav a {
+        white-space: nowrap;
+    }
+
+
+    /* INÍCIO */
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* PROGRAMAÇÃO */
+
+    table {
+        min-width: 700px;
+    }
+
+    main > section:has(table) {
+        overflow-x: auto;
+    }
+
+    .metrics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .legend-list {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* PALESTRANTES */
+
+    .speaker-profile {
+        padding: 20px;
+    }
+
+    .speaker-profile img {
+        max-width: 100%;
+    }
+
+
+    /* LOCAL */
+
+    .map-container iframe {
+        height: 350px;
+    }
+
+    .transport-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* GALERIA */
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item img {
+        height: 250px;
+    }
+
+
+    /* CONFIRMAÇÃO */
+
+    .confirmation-card {
+        padding: 30px 20px;
+    }
+
+    .confirmation-card h1 {
+        font-size: 26px;
+    }
+
+    .confirmation-card p {
+        font-size: 15px;
+    }
+
+    .confirmation-actions {
+        flex-direction: column;
+    }
+
+    .confirmation-actions a {
+        width: 100%;
+    }
+
+
+    /* CRÉDITOS */
+
+    dialog {
+        width: 95%;
+
+        padding: 20px;
+    }
+}

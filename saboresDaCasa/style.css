@@ -1,0 +1,902 @@
+/* =========================================================
+   SABORES DA CASA
+   CSS PARA TODAS AS PÁGINAS
+   ========================================================= */
+
+
+/* ---------- CONFIGURAÇÕES GERAIS ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2f2925;
+    background-color: #fffaf5;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: #9a4f24;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c76b32;
+}
+
+p {
+    margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+
+/* ---------- CABEÇALHO ---------- */
+
+body > header {
+    background: linear-gradient(135deg, #7b3518, #a95326);
+    color: white;
+    text-align: center;
+    padding: 28px 20px 0;
+    box-shadow: 0 3px 15px rgba(60, 30, 15, 0.15);
+}
+
+body > header .slogan {
+    margin: 0 0 5px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+body > header h1 {
+    margin: 0 0 22px;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+body > header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+body > header nav a {
+    color: white;
+    padding: 13px 16px;
+    font-weight: 600;
+    border-radius: 8px 8px 0 0;
+    transition: 0.2s;
+}
+
+body > header nav a:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.16);
+}
+
+
+/* ---------- CONTEÚDO PRINCIPAL ---------- */
+
+main {
+    width: min(1100px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 55px 0 70px;
+}
+
+main > section > header,
+.pagina-receita > header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.categoria {
+    display: inline-block;
+    margin-bottom: 9px;
+    color: #a95326;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+main h1,
+.pagina-receita > header h1 {
+    margin: 0;
+    color: #39251c;
+    font-size: 3rem;
+}
+
+main h2 {
+    color: #39251c;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* =========================================================
+   PÁGINA INICIAL
+   ========================================================= */
+
+#inicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 75px;
+}
+
+#inicio article h2 {
+    margin: 10px 0 18px;
+    font-size: 3rem;
+}
+
+#inicio article > p:not(.categoria) {
+    color: #66574e;
+    font-size: 1.05rem;
+}
+
+#inicio figure {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 22px;
+    background: #ead9cc;
+    box-shadow: 0 12px 35px rgba(70, 35, 20, 0.15);
+}
+
+#inicio figure img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+#inicio figcaption {
+    padding: 10px 15px;
+    text-align: center;
+    color: #66574e;
+    background-color: white;
+}
+
+
+/* ---------- BOTÃO ---------- */
+
+.botao {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 13px 22px;
+    color: white;
+    background-color: #a95326;
+    border-radius: 10px;
+    font-weight: 700;
+    box-shadow: 0 6px 15px rgba(169, 83, 38, 0.22);
+    transition: 0.2s;
+}
+
+.botao:hover {
+    color: white;
+    background-color: #7b3518;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   RECEITAS DA SEMANA
+   ========================================================= */
+
+#escolhas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 70px;
+}
+
+#escolhas > header {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+#escolhas article {
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid #eaded6;
+    border-radius: 18px;
+    box-shadow: 0 7px 22px rgba(70, 35, 20, 0.08);
+    transition: 0.2s;
+}
+
+#escolhas article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 13px 30px rgba(70, 35, 20, 0.13);
+}
+
+#escolhas figure {
+    margin: 0;
+}
+
+#escolhas figure img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+#escolhas figcaption {
+    padding: 7px 14px;
+    color: #a95326;
+    background-color: #fff4ec;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+#escolhas article h3,
+#escolhas article > p {
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+#escolhas article h3 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-size: 1.35rem;
+}
+
+#escolhas article > p {
+    color: #66574e;
+}
+
+#escolhas article > p:last-child {
+    margin-top: 18px;
+    margin-bottom: 22px;
+}
+
+
+/* =========================================================
+   MANIFESTO
+   ========================================================= */
+
+#manifesto {
+    margin: 70px 0;
+    padding: 50px 35px;
+    text-align: center;
+    background-color: #f5e8dd;
+    border-radius: 20px;
+}
+
+#manifesto blockquote {
+    max-width: 750px;
+    margin: 0 auto;
+    color: #5a3727;
+    font-size: 1.7rem;
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   DICAS NA PÁGINA INICIAL
+   ========================================================= */
+
+#dicas-home {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 25px;
+    margin-bottom: 70px;
+}
+
+#dicas-home article,
+#dicas-home aside {
+    padding: 30px;
+    border-radius: 18px;
+}
+
+#dicas-home article {
+    background-color: white;
+    border: 1px solid #eaded6;
+}
+
+#dicas-home aside {
+    background-color: #fff0e5;
+    border-left: 5px solid #a95326;
+}
+
+#dicas-home h2,
+#dicas-home h3 {
+    margin-top: 5px;
+}
+
+#dicas-home p {
+    color: #66574e;
+}
+
+
+/* =========================================================
+   NEWSLETTER
+   ========================================================= */
+
+#newsletter {
+    padding: 40px;
+    text-align: center;
+    color: white;
+    background-color: #39251c;
+    border-radius: 20px;
+}
+
+#newsletter h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+#newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+#newsletter label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+#newsletter input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px 15px;
+    border: none;
+    border-radius: 9px 0 0 9px;
+    outline: none;
+}
+
+#newsletter button {
+    padding: 13px 20px;
+    border: none;
+    border-radius: 0 9px 9px 0;
+    color: white;
+    background-color: #a95326;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#newsletter button:hover {
+    background-color: #c76b32;
+}
+
+
+/* =========================================================
+   PÁGINA DE RECEITAS
+   ========================================================= */
+
+.card-horizontal {
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+    margin-bottom: 25px;
+    background-color: white;
+    border: 1px solid #eaded6;
+    border-radius: 18px;
+    box-shadow: 0 7px 22px rgba(70, 35, 20, 0.08);
+    transition: 0.2s;
+}
+
+.card-horizontal:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(70, 35, 20, 0.12);
+}
+
+.card-horizontal-img {
+    width: 300px;
+    min-height: 220px;
+    object-fit: cover;
+}
+
+.card-horizontal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 28px 32px;
+}
+
+.card-horizontal-content h2 {
+    margin: 0 0 10px;
+    font-size: 1.6rem;
+}
+
+.card-horizontal-content p {
+    color: #66574e;
+}
+
+.card-meta {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 10px;
+    color: #a95326;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.card-link {
+    font-weight: 700;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   PÁGINA DE RECEITA
+   ========================================================= */
+
+.pagina-receita > figure {
+    max-width: 850px;
+    margin: 0 auto 35px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(70, 35, 20, 0.12);
+}
+
+.pagina-receita > figure img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.pagina-receita > figure figcaption {
+    padding: 12px 18px;
+    text-align: center;
+    color: #66574e;
+    background-color: white;
+}
+
+.receita-cards-container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.receita-card-box {
+    margin-bottom: 15px;
+    padding: 0;
+    background-color: white;
+    border: 1px solid #eaded6;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(70, 35, 20, 0.06);
+}
+
+.receita-card-box > .info-header,
+.receita-card-box > summary {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 22px;
+}
+
+.receita-card-box > summary {
+    cursor: pointer;
+    list-style: none;
+}
+
+.receita-card-box > summary::-webkit-details-marker {
+    display: none;
+}
+
+.receita-card-box > summary::after {
+    content: "+";
+    margin-left: auto;
+    color: #a95326;
+    font-size: 1.5rem;
+}
+
+.receita-card-box[open] > summary::after {
+    content: "−";
+}
+
+.receita-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 45px;
+    width: 45px;
+    height: 45px;
+    color: #a95326;
+    background-color: #fff0e5;
+    border-radius: 12px;
+}
+
+.receita-card-title-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.receita-card-title {
+    color: #39251c;
+    font-size: 1.05rem;
+    font-weight: 800;
+}
+
+.receita-card-subtitle {
+    color: #7a6a61;
+    font-size: 0.88rem;
+}
+
+.info-bar-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0;
+    padding: 0 22px 22px;
+    list-style: none;
+}
+
+.info-bar-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    flex: 1;
+    min-width: 140px;
+    padding: 12px;
+    color: #66574e;
+    background-color: #fffaf5;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+.info-bar-item .material-symbols-outlined {
+    color: #a95326;
+}
+
+.receita-card-content {
+    padding: 0 22px 22px 82px;
+    color: #66574e;
+}
+
+.receita-card-content ul,
+.receita-card-content ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.receita-card-content li {
+    margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   DICAS
+   ========================================================= */
+
+.dica-cards-container {
+    display: grid;
+    gap: 18px;
+}
+
+.dica-card-horizontal {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 22px;
+    background-color: white;
+    border: 1px solid #eaded6;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(70, 35, 20, 0.06);
+}
+
+.dica-card-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 58px;
+    width: 58px;
+    height: 58px;
+    margin: 0;
+    color: #a95326;
+    background-color: #fff0e5;
+    border-radius: 15px;
+}
+
+.dica-card-content h2 {
+    margin: 0 0 5px;
+    font-size: 1.2rem;
+}
+
+.dica-card-content p {
+    margin: 0;
+    color: #66574e;
+}
+
+.video-card-horizontal {
+    margin-top: 10px;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #eaded6;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(70, 35, 20, 0.06);
+}
+
+.video-card-horizontal h2 {
+    margin-top: 0;
+}
+
+.video-card-horizontal iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: 0;
+    border-radius: 12px;
+}
+
+
+/* =========================================================
+   CONTATO
+   ========================================================= */
+
+form {
+    max-width: 750px;
+    margin: 35px auto 0;
+}
+
+fieldset {
+    margin-bottom: 22px;
+    padding: 25px;
+    border: 1px solid #eaded6;
+    border-radius: 16px;
+    background-color: white;
+}
+
+legend {
+    padding: 0 10px;
+    color: #a95326;
+    font-weight: 800;
+}
+
+form p {
+    margin-bottom: 18px;
+}
+
+label {
+    color: #4b3a31;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    margin-top: 7px;
+    padding: 12px 14px;
+    color: #2f2925;
+    background-color: #fffaf5;
+    border: 1px solid #d9c9be;
+    border-radius: 9px;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #a95326;
+    box-shadow: 0 0 0 3px rgba(169, 83, 38, 0.12);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #a95326;
+}
+
+form button {
+    padding: 12px 22px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 9px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+form button[type="submit"] {
+    color: white;
+    background-color: #a95326;
+}
+
+form button[type="submit"]:hover {
+    background-color: #7b3518;
+}
+
+form button[type="reset"] {
+    color: #5f5149;
+    background-color: #eaded6;
+}
+
+form button[type="reset"]:hover {
+    background-color: #d9c9be;
+}
+
+
+/* =========================================================
+   RODAPÉ
+   ========================================================= */
+
+body > footer {
+    padding: 38px 20px;
+    text-align: center;
+    color: #e9ddd5;
+    background-color: #39251c;
+}
+
+body > footer p {
+    margin: 5px 0;
+}
+
+body > footer strong {
+    color: white;
+    font-size: 1.15rem;
+}
+
+body > footer address {
+    margin: 15px 0;
+    color: #cdbdb3;
+    font-style: normal;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    main {
+        width: min(100% - 28px, 700px);
+        padding-top: 40px;
+    }
+
+    #inicio {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    #inicio figure img {
+        height: 300px;
+    }
+
+    #escolhas {
+        grid-template-columns: 1fr;
+    }
+
+    #dicas-home {
+        grid-template-columns: 1fr;
+    }
+
+    .card-horizontal {
+        flex-direction: column;
+    }
+
+    .card-horizontal-img {
+        width: 100%;
+        height: 230px;
+    }
+
+    .pagina-receita > figure img {
+        height: 320px;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    body > header {
+        padding-top: 22px;
+    }
+
+    body > header nav a {
+        padding: 10px 9px;
+        font-size: 0.85rem;
+    }
+
+    main {
+        width: calc(100% - 22px);
+        padding-top: 32px;
+    }
+
+    #inicio article h2 {
+        font-size: 2rem;
+    }
+
+    #inicio figure img {
+        height: 240px;
+    }
+
+    #manifesto {
+        padding: 35px 20px;
+    }
+
+    #newsletter {
+        padding: 30px 20px;
+    }
+
+    #newsletter form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #newsletter input,
+    #newsletter button {
+        width: 100%;
+        border-radius: 9px;
+    }
+
+    .pagina-receita > figure img {
+        height: 240px;
+    }
+
+    .receita-card-box > .info-header,
+    .receita-card-box > summary {
+        padding: 17px;
+    }
+
+    .receita-card-content {
+        padding: 0 17px 20px;
+    }
+
+    .info-bar-horizontal {
+        padding: 0 17px 17px;
+    }
+
+    .info-bar-item {
+        min-width: 100%;
+    }
+
+    .dica-card-horizontal {
+        align-items: flex-start;
+        padding: 18px;
+    }
+
+    .video-card-horizontal {
+        padding: 15px;
+    }
+
+    fieldset {
+        padding: 18px;
+    }
+
+    form button {
+        margin-bottom: 8px;
+    }
+}
